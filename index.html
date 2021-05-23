@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>AP Cleaning | Home</title>
+
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- index css -->
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- Fonts Lato and Raleway -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;600;700;800&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--* header -->
+    <div class="contact">+256 123 456 789</div>
+    <nav class="nav-bar">
+      <!--* logo -->
+      <div class="logo">
+        <p>
+          <span class="ap">AP</span> <br />
+          <span class='cleaning__services'>Cleaning Services</span>
+        </p>
+      </div>
+
+      <!--* nav links -->
+      <ul class="nav-list">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">GALLERY</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+    </nav>
+
+    <!--* swiper -->
+    <section class="swiper">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!--* slide 1 -->
+          <div class="swiper-slide" style="background-color: orange">
+            <div class="swiper-slide__left">
+              <h1>Cleaning and fumigation services</h1>
+              <p>
+                Leave the house cleaning duties to the REAL PROS and
+                enjoy a well-deserved time off! All of your cleaning
+                needs in one place - carpet, vacate, oven or even
+                window cleaning.
+              </p>
+            </div>
+            <div class="swiper-slide__right"></div>
+          </div>
+          <!--* slide 2 -->
+          <div
+            class="swiper-slide"
+            style="background-color: lightblue"
+          >
+            <div class="swiper-slide__left">
+              <h1>
+                Caring for your business <br />
+                environment
+              </h1>
+
+              <p>
+                A clean working environment is a safer <br />
+                working environment, it also fosters greater working
+                relations.
+              </p>
+            </div>
+            <div class="swiper-slide__right"></div>
+          </div>
+
+          <!--* Slide 3 -->
+          <div
+            class="swiper-slide"
+            style="background-color: lightgray"
+          >
+            Slide 3
+          </div>
+          <!--* Slide 4 -->
+          <div class="swiper-slide" style="background-color: cyan">
+            Slide 4
+          </div>
+        </div>
+        <!--* Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!--* Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!--* swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--* Initialize Swiper -->
+    <script>
+      const swiper = new Swiper('.swiper-container', {
+      spaceBetween: 0,
+      centeredSlides: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    </script>
+  </body>
+</html>

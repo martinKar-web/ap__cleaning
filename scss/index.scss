@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  //padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background: rgb(226, 226, 226);
+  font-family: 'Raleway', sans-serif;
+}
+
+.contact {
+  background: #aa00ff;
+  padding: 0.8rem 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+//* navigation
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  padding: 2rem 5rem;
+  box-sizing: border-box;
+
+  .logo {
+    .ap {
+      font-weight: 800;
+      font-size: 1.8rem;
+      letter-spacing: 1rem;
+    }
+
+    .cleaning__services{
+      font-size: .7rem;
+    }
+  }
+
+  .nav-list {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.swiper {
+  background: orange;
+  height: 90vh;
+}
+
+@import './swiper';
