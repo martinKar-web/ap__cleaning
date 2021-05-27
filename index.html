@@ -22,16 +22,26 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;600;700;800&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!--* header -->
-    <div class="contact">+256 123 456 789</div>
+    <div class="contact">
+      <i class="fas fa-mobile-alt"></i>
+      <span>+256 123 456 789</span>
+    </div>
+    <!--* navigation -->
     <nav class="nav-bar">
       <!--* logo -->
       <div class="logo">
         <p>
           <span class="ap">AP</span> <br />
-          <span class='cleaning__services'>Cleaning Services</span>
+          <span class="cleaning__services">Cleaning Services</span>
         </p>
       </div>
 
@@ -49,24 +59,37 @@
     <section class="swiper">
       <div class="swiper-container">
         <div class="swiper-wrapper">
-          <!--* slide 1 -->
-          <div class="swiper-slide" style="background-color: orange">
+          <!-- swiper slide 1 -->
+          <div class="swiper-slide swiperSLide__slide-1">
             <div class="swiper-slide__left">
-              <h1>Cleaning and fumigation services</h1>
+              <h1>Book us 7 days a week</h1>
+
               <p>
-                Leave the house cleaning duties to the REAL PROS and
-                enjoy a well-deserved time off! All of your cleaning
-                needs in one place - carpet, vacate, oven or even
-                window cleaning.
+                Our Fantastic cleaning services in Uganda are
+                available all week long. We work around your schedule,
+                not the other way around. This is how we make your
+                life a bit easier.
+              </p>
+            </div>
+          </div>
+          <!-- swiper slide 2 -->
+          <div class="swiper-slide">
+            <div class="swiper-slide__left">
+              <h1>
+                Cleaning and fumigation <br />
+                services
+              </h1>
+              <p>
+                Leave the cleaning duties to the
+                <strong>real pros</strong> and enjoy a well-deserved
+                time off! All of your cleaning needs in one place -
+                carpet, vacate, oven or even window cleaning.
               </p>
             </div>
             <div class="swiper-slide__right"></div>
           </div>
-          <!--* slide 2 -->
-          <div
-            class="swiper-slide"
-            style="background-color: lightblue"
-          >
+          <!-- swiper slide 3 -->
+          <div class="swiper-slide">
             <div class="swiper-slide__left">
               <h1>
                 Caring for your business <br />
@@ -74,31 +97,132 @@
               </h1>
 
               <p>
-                A clean working environment is a safer <br />
-                working environment, it also fosters greater working
-                relations.
+                A clean working environment is a safer working
+                environment.
               </p>
             </div>
             <div class="swiper-slide__right"></div>
           </div>
+          <!-- swiper Slide 4 -->
+          <div class="swiper-slide">
+            <div class="swiper-slide__left">
+              <h1>Satisfaction guaranteed</h1>
 
-          <!--* Slide 3 -->
-          <div
-            class="swiper-slide"
-            style="background-color: lightgray"
-          >
-            Slide 3
-          </div>
-          <!--* Slide 4 -->
-          <div class="swiper-slide" style="background-color: cyan">
-            Slide 4
+              <p>
+                If you’re not happy enough to recommend us to your
+                friends, let us know and we’ll send a team out to make
+                it right.
+              </p>
+            </div>
           </div>
         </div>
-        <!--* Add Pagination -->
+        <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
-        <!--* Add Arrows -->
+        <!-- Add Arrows -->
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <!--* end swiper -->
+
+    <!--* start cards section  -->
+    <section class="cards">
+      <div class="cards__container">
+        <!-- card 1 -->
+        <div class="card">
+          <h2>Home Cleaning</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Iure blanditiis officia dicta eos et nostrum?
+          </p>
+        </div>
+        <!-- card 2 -->
+        <div class="card">
+          <h2>Factory cleaning</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Iure blanditiis officia dicta eos et nostrum?
+          </p>
+        </div>
+        <!-- card 3 -->
+        <div class="card">
+          <h2>Interior cleaning</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Iure blanditiis officia dicta eos et nostrum?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--* start modern cleaning -->
+    <section class="modernCleaning">
+      <h2>Modern Cleaning for Modern Lives</h2>
+      <p>
+        We have the <strong>people</strong> to keep it personalised
+        and the <strong>technology</strong> to keep it efficient
+      </p>
+    </section>
+    <!--* end modern cleaning -->
+
+    <!--* start why us section -->
+    <section class="whyUs">
+      <h2>Why Choose Us</h2>
+      <div class="whyUs__itemsContainer">
+        <!--* item 1 -->
+        <div class="whyUs__item">
+          <div>
+            <h3>Proffessional Service</h3>
+            <p>
+              We work with licensed and fully insured technicians, and
+              our equipment is modern, tested and well maintained. All
+              you need to do is sit back, enjoy your free time and
+              admire the quality results from your cleaning session.
+            </p>
+          </div>
+          <div><img src="" alt="image" /></div>
+        </div>
+        <!--* item 2 -->
+        <div class="whyUs__item">
+          <div>
+            <h3>Affordable Prices</h3>
+            <p>
+              Aside from our traditional price list, which is already
+              quite competitive, we also offer special deals when you
+              combine different services. The end result is a unique
+              service package, tailored specifically to fit your
+              needs, and at a great price. No hidden charges. We’re
+              called Fantastic for a reason.
+            </p>
+          </div>
+          <div><img src="" alt="" /></div>
+        </div>
+        <!--* item 3 -->
+        <div class="whyUs__item">
+          <div>
+            <h3>Instant Online Booking</h3>
+            <p>
+              Our Fantastic cleaning services in Uganda are available
+              all week long. We work around your schedule, not the
+              other way around. This is how we make your life a bit
+              easier.
+            </p>
+          </div>
+          <div><img src="" alt="" /></div>
+        </div>
+        <!--* item 4 -->
+        <div class="whyUs__item">
+          <div>
+            <h3>Adjustible Scheduling</h3>
+            <p>
+              Our Fantastic cleaning services in Uganda are available
+              all week long. We work around your schedule, not the
+              other way around. This is how we make your life a bit
+              easier.
+            </p>
+          </div>
+          <div><img src="" alt="" /></div>
+        </div>
       </div>
     </section>
 
@@ -106,23 +230,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!--* Initialize Swiper -->
-    <script>
-      const swiper = new Swiper('.swiper-container', {
-      spaceBetween: 0,
-      centeredSlides: true,
-      autoplay: {
-        delay: 1000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-    </script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>

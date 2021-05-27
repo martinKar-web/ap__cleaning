@@ -4,7 +4,6 @@
 - HTML
 - CSS - SCSS
 - JS
-
 ## At what stage is the project?
 - This project is still under development
 

@@ -1,25 +1,24 @@
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
 h1 {
-  font-size: 3.2rem;
-  line-height: 3.5rem;
+  font-size: 3.7rem;
+  line-height: 78px;
   font-weight: 800;
+  letter-spacing: 0.01rem;
+}
+
+.swiper {
+  height: 100vh;
+  z-index: -1000;
+
+  .swiper-button-next,
+  .swiper-button-prev{
+    font-size: 1rem !important;
+    height: 10px !important;
+  }
 }
 
 .swiper-container {
+  z-index: -1000;
+
   width: 100%;
   height: 100%;
   margin-left: auto;
@@ -27,11 +26,9 @@ h1 {
 }
 
 .swiper-slide {
-  //text-align: center;
   font-size: 18px;
-  background: #fff;
-  //padding: 1rem;
-  //background: orangered;
+  background-image: url('../img/cleaning__1.jpg');
+  background-size: cover;
 
   /* Center slide text vertically */
 
@@ -45,14 +42,14 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 50%;
-    background: white;
+    width: 70%;
+    //background: white;
     padding: 2rem;
-    padding-left: 5rem;
+    margin-left: 5rem;
 
     p {
       font-size: 0.8rem;
-      margin-top: .5rem;
+      margin-top: 1rem;
       line-height: 2rem;
       width: 90%;
       font-family: 'Lato', sans-serif;

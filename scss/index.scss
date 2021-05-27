@@ -10,22 +10,25 @@ body {
 }
 
 .contact {
-  background: #aa00ff;
+  background: #18C5D9;
   padding: 0.8rem 5rem;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  font-family: 'Lato', sans-serif;
 }
 
-//* navigation
+// navigation
 
 .nav-bar {
+  //background: #18C5D9;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Lato', sans-serif;
   padding: 2rem 5rem;
   box-sizing: border-box;
+  background-color: rgb(233, 233, 233);
 
   .logo {
     .ap {
@@ -34,8 +37,8 @@ body {
       letter-spacing: 1rem;
     }
 
-    .cleaning__services{
-      font-size: .7rem;
+    .cleaning__services {
+      font-size: 0.7rem;
     }
   }
 
@@ -48,13 +51,14 @@ body {
 
     a {
       text-decoration: none;
+      font-family: 'Lato', sans-serif;
+      color: #212121;
     }
   }
 }
 
-.swiper {
-  background: orange;
-  height: 90vh;
-}
+@import './_swiper';
+@import './_cards';
+@import './_whyUs';
+@import './_modernCleaning';
 
-@import './swiper';
