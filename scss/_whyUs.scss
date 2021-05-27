@@ -23,11 +23,12 @@
       border: 2px solid red;
       height: 200px;
       padding: 2rem 1rem;
-      flex-basis: 500px;
+      flex: 400px 1 1;
       margin: 1rem 1.5rem;
+      border-radius: 5px;
 
       h3{
-        margin-top: 2rem;
+        margin-top: 0rem;
       }
 
       p{

@@ -10,25 +10,12 @@ body {
 }
 
 .contact {
-  background: #18C5D9;
-  padding: 0.8rem 5rem;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  font-family: 'Lato', sans-serif;
-}
-
-// navigation
-
-.nav-bar {
-  //background: #18C5D9;
-
+  background: #18c5d9;
+  padding: 5rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 2rem 5rem;
-  box-sizing: border-box;
-  background-color: rgb(233, 233, 233);
+  align-items: flex-end;
+  font-family: 'Lato', sans-serif;
 
   .logo {
     .ap {
@@ -41,18 +28,48 @@ body {
       font-size: 0.7rem;
     }
   }
+}
+
+// navigation
+
+.nav-bar {
+  //background: #18C5D9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: rgb(233, 233, 233);
 
   .nav-list {
     width: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     list-style: none;
+    height: 100%;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      border: 1px solid red;
+      height: 100%;
+      padding: 0 2rem;
+      box-sizing: content-box;
+    }
 
     a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-decoration: none;
       font-family: 'Lato', sans-serif;
+      font-size: 0.8rem;
       color: #212121;
+      width: auto;
+      height: 100%;
     }
   }
 }
@@ -61,4 +78,3 @@ body {
 @import './_cards';
 @import './_whyUs';
 @import './_modernCleaning';
-
