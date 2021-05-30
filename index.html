@@ -9,29 +9,31 @@
     />
     <title>AP Cleaning | Home</title>
 
-    <!-- swiper css -->
+    <!--* swiper css -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <!-- index css -->
+    <!--* index css -->
     <link rel="stylesheet" href="css/index.css" />
-    <!-- Fonts Lato and Raleway -->
+
+    <!--* Fonts Lato and Raleway -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;600;700;800&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap"
       rel="stylesheet"
     />
-    <!-- font awesome -->
+
+    <!--* font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       referrerpolicy="no-referrer"
     />
   </head>
+  <!--* BODY STARTS HERE -->
   <body>
-    <!--* header -->
-    <div class="contact">
+    <header class="header">
       <!--* logo -->
       <div class="logo">
         <p>
@@ -39,12 +41,31 @@
           <span class="cleaning__services">Cleaning Services</span>
         </p>
       </div>
-      <div>
-        <i class="fas fa-mobile-alt"></i>
-        <span>+256 123 456 789</span>
+
+      <!--* contacts -->
+      <div class="contacts__container">
+        <!--* phone -->
+        <div class="contact">
+          <div><i class="fas fa-phone-alt fa-lg"></i></div>
+          <div class="contact__info">
+            <p class="contact__typ">Phone</p>
+            <p class="contact__num">+256 786 439 176</p>
+          </div>
+        </div>
+        <!--* email -->
+        <div class="contact">
+          <div class="contact__icon"><i class="fas fa-envelope fa-lg"></i></i></div>
+          <div class="contact__info">
+            <p class="contact__typ">E-mail</p>
+            <p class="contact__num">contact@apcleaning.com</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <!--* navigation -->
+      <!--* End contacts container -->
+    </header>
+    <!--* End of header -->
+
+    <!--* navigation starts here -->
     <nav class="nav-bar">
       <!--* nav links -->
       <ul class="nav-list">
@@ -55,8 +76,9 @@
         <li><a href="#">CONTACT US</a></li>
       </ul>
     </nav>
+    <!--* End navigation -->
 
-    <!--* swiper -->
+    <!--* swiperstarts here -->
     <section class="swiper">
       <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -64,7 +86,6 @@
           <div class="swiper-slide swiperSLide__slide-1">
             <div class="swiper-slide__left">
               <h1>Book us 7 days a week</h1>
-
               <p>
                 Our Fantastic cleaning services in Uganda are
                 available all week long. We work around your schedule,
