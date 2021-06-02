@@ -1,0 +1,10 @@
+$cardIconColor:#B0B7B6;
+$secondaryColor: #163A45;
+
+@mixin flexBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//#DBDBDB
