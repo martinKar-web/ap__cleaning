@@ -1,8 +1,12 @@
 .cards {
   width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #fff;
+  padding-bottom: 5rem;
+  padding-top: 6rem;
 }
 
 .cards__container {
@@ -12,8 +16,8 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-top: -70px;
-  z-index: 9999;
+  margin-top: -167px;
+  //z-index: ;
 
   .card {
     display: flex;
@@ -22,7 +26,7 @@
     height: 150px;
     flex-basis: 29%;
     padding: 1rem;
-    background: rgb(27, 188, 232);
+    background: #1bbce8;
     font-family: 'Raleway', sans-serif;
     position: relative;
 

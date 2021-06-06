@@ -4,6 +4,7 @@
   margin: 0;
   //padding: 0;
   font-family: 'Raleway', sans-serif;
+  //box-sizing: border-box;
 }
 
 body {
@@ -36,6 +37,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     width: auto;
+    font-family: 'Ralewar', sans-serif;
 
     .contact{
       display: flex;
@@ -43,9 +45,14 @@ body {
       align-items: center;
       width: auto;
 
+      .contact__icon img{
+        height: 28px;
+        width: 28;
+      }
+
       &:nth-child(2){
         margin-left: 1rem;
-        //border-left: 2px solid #ececec;
+        border-left: 2px solid #2121211a;
 
         //...
         .contact__icon{
@@ -87,6 +94,9 @@ body {
   align-items: center;
   height: 58px;
   box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 
   .nav-list {
     width: 50%;
