@@ -1,12 +1,11 @@
 .cards {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  padding-bottom: 5rem;
-  padding-top: 6rem;
+  padding-bottom: 2rem;
+  padding-top: 5rem;
 }
 
 .cards__container {
@@ -16,7 +15,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-top: -167px;
+  margin-top: -150px;
   //z-index: ;
 
   .card {
@@ -45,6 +44,10 @@
 
     .card__content{
       margin-left: 65px;
+      h3{
+        margin-bottom: 0.5rem;
+        font-size: 1.75rem;
+      }
     }
 
     p {

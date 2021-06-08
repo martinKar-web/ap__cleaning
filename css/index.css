@@ -8,6 +8,10 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+h2 {
+  font-size: 2.5rem;
+}
+
 .header {
   background: #f2f2f2;
   padding: 3rem 5rem;
@@ -174,7 +178,7 @@ h1 {
 }
 
 .swiper {
-  height: 110vh;
+  height: 100vh;
   z-index: -1000;
 }
 
@@ -253,8 +257,30 @@ h1 {
   color: #222222;
 }
 
+.swiper-container2 {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide2 {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .cards {
-  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,8 +295,8 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fff;
-  padding-bottom: 5rem;
-  padding-top: 6rem;
+  padding-bottom: 2rem;
+  padding-top: 5rem;
 }
 
 .cards__container {
@@ -286,7 +312,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: -167px;
+  margin-top: -150px;
 }
 
 .cards__container .card {
@@ -325,6 +351,11 @@ h1 {
   margin-left: 65px;
 }
 
+.cards__container .card .card__content h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
 .cards__container .card p {
   font-size: 14px;
   line-height: 24px;
@@ -345,7 +376,7 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   padding: 5rem;
-  background: #ccc;
+  background: #f2f2f2;
   margin-top: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -369,31 +400,69 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid red;
-  height: 200px;
-  padding: 2rem 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 240px;
+  margin: 1rem 1.5rem;
+  border-radius: 2px;
   -webkit-box-flex: 400px;
       -ms-flex: 400px 1 1;
           flex: 400px 1 1;
-  margin: 1rem 1.5rem;
-  border-radius: 5px;
 }
 
-.whyUs .whyUs__itemsContainer .whyUs__item h3 {
-  margin-top: 0rem;
+.whyUs .whyUs__itemsContainer .whyUs__item .whyUs__itemContent {
+  background-color: #1bbce8;
+  width: 60%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2rem;
+  position: relative;
 }
 
-.whyUs .whyUs__itemsContainer .whyUs__item p {
-  font-size: 1rem;
+.whyUs .whyUs__itemsContainer .whyUs__item .whyUs__itemContent::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.whyUs .whyUs__itemsContainer .whyUs__item .whyUs__itemContent .line {
+  width: 40px;
+  height: 2px;
+  background-color: blue;
+  margin: 0.5rem 0;
+}
+
+.whyUs .whyUs__itemsContainer .whyUs__item .whyUs__itemContent h3 {
+  font-size: 1.25rem;
+}
+
+.whyUs .whyUs__itemsContainer .whyUs__item .whyUs__itemContent p {
+  font-size: 0.9rem;
   line-height: 1.7rem;
-  margin-top: 2rem;
+  height: 100%;
+  margin-top: 0.5rem;
+}
+
+.whyUs .whyUs__itemsContainer .whyUs__item .whyUs__itemImage {
+  width: 40%;
+  height: 100%;
+}
+
+.whyUs .whyUs__itemsContainer .whyUs__item .whyUs__itemImage img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .modernCleaning {
@@ -424,7 +493,6 @@ h1 {
   background-color: #1bbce8;
   width: 70px;
   margin: .7rem 0;
-  margin-top: 1.2rem;
 }
 
 .modernCleaning p {
