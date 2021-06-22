@@ -75,13 +75,13 @@
     </nav>
     <!--*================================= Navigation ==================================-->
 
-    <!--*================================= Swiper ======================================-->
-    <section class="swiper">
+    <!--*================================= first swiper ======================================-->
+    <!-- Swiper -->
+    <section id="swiper">
       <div class="swiper-container swiper1">
         <div class="swiper-wrapper">
-          <!-- swiper slide 1 -->
           <div class="swiper-slide">
-            <div class="swiper-slide__left">
+            <div class="swiperSlide__content">
               <h1>
                 Cleaning and fumigation <br />
                 services
@@ -93,11 +93,21 @@
                 carpet, vacate, oven or even window cleaning.
               </p>
             </div>
-            <div class="swiper-slide__right"></div>
           </div>
-          <!-- swiper Slide 4 -->
           <div class="swiper-slide">
-            <div class="swiper-slide__left">
+            <div class="swiperSlide__content">
+              <h1>
+                Caring for your business <br />
+                environment
+              </h1>
+              <p>
+                A clean working environment is a safer working
+                environment.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiperSlide__content">
               <h1>Proffesional Staff at your Service</h1>
 
               <p>
@@ -107,10 +117,8 @@
               </p>
             </div>
           </div>
-        </div>
-          <!-- swiper slide 1 -->
-          <div class="swiper-slide swiperSLide__slide-1">
-            <div class="swiper-slide__left">
+          <div class="swiper-slide">
+            <div class="swiperSlide__content">
               <h1>Book us 7 days a week</h1>
               <p>
                 Our Fantastic cleaning services in Uganda are
@@ -120,30 +128,13 @@
               </p>
             </div>
           </div>
-          
-          <!-- swiper slide 3 -->
-          <div class="swiper-slide">
-            <div class="swiper-slide__left">
-              <h1>
-                Caring for your business <br />
-                environment
-              </h1>
-
-              <p>
-                A clean working environment is a safer working
-                environment.
-              </p>
-            </div>
-            <div class="swiper-slide__right"></div>
-          </div>
-          
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+        </div>
         <!-- Add Arrows -->
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
     </section>
+  
     <!--*=========================== end swiper =================================-->
 
     <!--*=========================== start cards section ========================-->
@@ -280,36 +271,35 @@
     <!--* ============================== End whyUs section ================================= -->
 
     <!--* ============================== Start Services section ============================ -->
-    <section class="services">
+    <section id="services">
       <h2>Our services</h2>
-      <!-- Swiper -->
-  <div class="swiper-container swiper2">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide swiper-slide2">
-        <h3>slide 1</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A qui, cum incidunt hic debitis minus mollitia quas, nobis maxime ab tempora suscipit? Laudantium consequatur aliquam at ducimus, odit iure tempora. </p>
-      </div>
-      <div class="swiper-slide swiper-slide2">Slide 2</div>
-      <div class="swiper-slide swiper-slide2">Slide 3</div>
-      <div class="swiper-slide swiper-slide2">Slide 4</div>
-      <div class="swiper-slide swiper-slide2">Slide 5</div>
-      <div class="swiper-slide swiper-slide2">Slide 6</div>
-      <div class="swiper-slide swiper-slide2">Slide 6</div>
-      <div class="swiper-slide swiper-slide2">Slide 6</div>
-      <div class="swiper-slide swiper-slide2">Slide 6</div>
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
+      <div class="underline"></div>
 
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
+      <div class="swiper__two">
+        <!-- Swiper -->
+        <div class="swiper-container swiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 10</div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination swiper-pagination2"></div>
+        </div>
+      </div>
+      
     </section>
     <!--* ============================== End Services section ============================ -->
 
     <!--* swiper js -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
     <!--* Initialize Swiper -->
     <script src="./js/swiper.js"></script>
   </body>

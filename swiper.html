@@ -1,76 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-  <!-- Demo styles -->
-  <style>
-    html,
-    body {
-      position: relative;
-      height: 100%;
-    }
-
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
-
-    
-  </style>
-</head>
-
-<body>
-  <!-- Swiper -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-      <div class="swiper-slide">Slide 10</div>
+<div class="swiper-container swiper1">
+  <div class="swiper-wrapper">
+    <!-- swiper slide 1 -->
+    <div class="swiper-slide">
+      <div class="swiper-slide__left">
+        <h1>
+          Cleaning and fumigation <br />
+          services
+        </h1>
+        <p>
+          Leave the cleaning duties to the
+          <strong>real pros</strong> and enjoy a well-deserved time
+          off! All of your cleaning needs in one place - carpet,
+          vacate, oven or even window cleaning.
+        </p>
+      </div>
+      <div class="swiper-slide__right"></div>
     </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    <!-- swiper Slide 4 -->
+    <div class="swiper-slide">
+      <div class="swiper-slide__left">
+        <h1>Proffesional Staff at your Service</h1>
+
+        <p>
+          If you’re not happy enough to recommend us to your friends,
+          let us know and we’ll send a team out to make it right.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- swiper slide 1 -->
+  <div class="swiper-slide">
+    <div class="swiper-slide__left">
+      <h1>Book us 7 days a week</h1>
+      <p>
+        Our Fantastic cleaning services in Uganda are available all
+        week long. We work around your schedule, not the other way
+        around. This is how we make your life a bit easier.
+      </p>
+    </div>
   </div>
 
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- swiper slide 3 -->
+  <div class="swiper-slide">
+    <div class="swiper-slide__left">
+      <h1>
+        Caring for your business <br />
+        environment
+      </h1>
+      <p>
+        A clean working environment is a safer working environment.
+      </p>
+    </div>
+    <div class="swiper-slide__right"></div>
+  </div>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
-</body>
-
-</html>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination swiper-pagination1"></div>
+  <!-- Add Arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>

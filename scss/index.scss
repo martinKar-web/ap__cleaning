@@ -80,17 +80,6 @@ h2{
   }
 }
 
-// navigation
-
-//<i class="fas fa-camera fa-xs"></i>
-//<i class="fas fa-camera fa-sm"></i>
-//<i class="fas fa-camera fa-lg"></i>
-//<i class="fas fa-camera fa-2x"></i>
-//<i class="fas fa-camera fa-3x"></i>
-//<i class="fas fa-camera fa-5x"></i>
-//<i class="fas fa-camera fa-7x"></i>
-//<i class="fas fa-camera fa-10x"></i>
-
 .nav-bar {
   background: rgb(27, 188, 232);
   display: flex;
@@ -147,3 +136,4 @@ h2{
 @import './_cards';
 @import './_whyUs';
 @import './_modernCleaning';
+@import './services';

@@ -1,28 +1,19 @@
-//***************** slide1
-const swiper_1 = new Swiper('.swiper1', {
-  speed: 500,
-  spaceBetween: 0,
-  centeredSlides: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: true,
-  },
-  loop: true,
+var swiper = new Swiper('.swiper1', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  effect: 'slide',
-  initialSlide: 0,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: true,
+  },
 });
 
-//***************** slide 2
-const swiper_2 = new Swiper('.swiper2', {
+var swiper2 = new Swiper('.swiper2', {
   slidesPerView: 3,
-  spaceBetween: 30,
-  freeMode: true,
+  spaceBetween: 40,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination2',
     clickable: true,
   },
 });
