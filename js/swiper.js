@@ -7,13 +7,16 @@ var swiper = new Swiper('.swiper1', {
     delay: 3000,
     disableOnInteraction: true,
   },
+  loop:true
 });
 
 var swiper2 = new Swiper('.swiper2', {
   slidesPerView: 3,
   spaceBetween: 40,
-  pagination: {
-    el: '.swiper-pagination2',
-    clickable: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
+  loop: true,
+  //direction: 'vertical'
 });
