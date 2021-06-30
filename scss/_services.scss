@@ -9,15 +9,19 @@
   }
 
   .swiper-button-next::after, .swiper-button-prev::after{
-    color: $secondary-color;
+    color: $secondaryColor;
+    font-size: 5px !important;
+    border: 2px solid $primaryColor;
   }
 
   .swiper-button-prev::after{
-    font-size: 30px !important;
+    border: 5px solid $primaryColor !important;
+
+    left: 100px;
   }
 
   .swiper-button-next::after{
-    font-size: 30px !important;
+    right: 100px;
   }
 
   .swiper2 {

@@ -29,12 +29,16 @@ h2 {
 
 .header .logo .ap {
   font-weight: 800;
-  font-size: 2rem;
-  letter-spacing: rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
-.header .logo .cleaning__services {
-  font-size: 0.7rem;
+.header .logo .cleaning {
+  font-size: 1.5rem;
+}
+
+.header .logo .services {
+  font-size: 1.5rem;
 }
 
 .header .contacts__container {
@@ -482,12 +486,19 @@ h2 {
   text-align: center;
 }
 
+#services .swiper-button-next::after, #services .swiper-button-prev::after {
+  color: #163A45;
+  font-size: 5px !important;
+  border: 2px solid #1bbce8;
+}
+
 #services .swiper-button-prev::after {
-  font-size: 30px !important;
+  border: 5px solid #1bbce8 !important;
+  left: 100px;
 }
 
 #services .swiper-button-next::after {
-  font-size: 30px !important;
+  right: 100px;
 }
 
 #services .swiper2 {
