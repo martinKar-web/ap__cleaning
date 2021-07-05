@@ -13,8 +13,8 @@ h2 {
 }
 
 .header {
-  background: #f2f2f2;
-  padding: 3rem 5rem;
+  background: #fff;
+  padding: 0.1rem 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,18 +27,12 @@ h2 {
   font-family: 'Raleway', sans-serif;
 }
 
-.header .logo .ap {
-  font-weight: 800;
-  font-size: 1rem;
-  text-align: center;
+.header .logo__container {
+  background: orngered;
 }
 
-.header .logo .cleaning {
-  font-size: 1.5rem;
-}
-
-.header .logo .services {
-  font-size: 1.5rem;
+.header .logo__container .logo {
+  height: 170px;
 }
 
 .header .contacts__container {
@@ -84,11 +78,13 @@ h2 {
 
 .header .contacts__container .contact .contact__info {
   margin-left: 1rem;
+  color: #212121;
 }
 
 .header .contacts__container .contact .contact__num {
   margin-top: 0.2rem;
   font-size: 0.8rem;
+  color: #bdbcbc;
 }
 
 .header .contacts__container .contact .contact__typ {
@@ -116,13 +112,12 @@ h2 {
 }
 
 .nav-bar .nav-list {
-  width: 50%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -142,7 +137,7 @@ h2 {
           align-items: center;
   width: auto;
   height: 100%;
-  padding: 0 2rem;
+  padding: 0 2.3rem;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   cursor: pointer;
@@ -175,7 +170,7 @@ h2 {
 }
 
 #swiper {
-  height: 80vh;
+  height: 90vh;
   z-index: -1000;
 }
 
@@ -184,11 +179,11 @@ h2 {
   height: 100%;
 }
 
-.swiperSlide1 {
+.slide {
   text-align: center;
   font-size: 18px;
-  background: url(../img/cleaning__1.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,7 +196,7 @@ h2 {
           align-items: center;
 }
 
-.swiperSlide1 .swiperSlide__content {
+.slide .swiperSlide__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,13 +216,29 @@ h2 {
   text-align: left;
 }
 
-.swiperSlide1 .swiperSlide__content h1 {
+.slide .swiperSlide__content h1 {
   font-size: 3rem;
 }
 
-.swiperSlide1 .swiperSlide__content p {
+.slide .swiperSlide__content p {
   font-size: 0.9rem;
   line-height: 2rem;
+}
+
+.slide_1 {
+  background: url(../img/hero/slide_2.jpg);
+}
+
+.slide_2 {
+  background: url(../img/hero/slide_1.jpg);
+}
+
+.slide_3 {
+  background: url(../img/hero/slide_1.jpg);
+}
+
+.slide_4 {
+  background: url(../img/hero/slide_1.jpg);
 }
 
 .cards {

@@ -1,5 +1,5 @@
 #swiper {
-  height: 80vh;
+  height: 90vh;
   z-index: -1000;
 }
 
@@ -10,11 +10,11 @@
   height: 100%;
 }
 
-.swiperSlide1 {
+.slide {
   text-align: center;
   font-size: 18px;
-  background: url(../img/cleaning__1.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
 
   /* Center slide text vertically */
   display: flex;
@@ -26,7 +26,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    //background-color: lawngreen;
     width: 600px;
     height: 200px;
     margin-left: 7rem;
@@ -40,6 +39,20 @@
       line-height: 2rem;
     }
   }
+
+}
+
+.slide_1{
+  background: url(../img/hero/slide_2.jpg);
+}
+.slide_2{
+  background: url(../img/hero/slide_1.jpg);
+}
+.slide_3{
+  background: url(../img/hero/slide_1.jpg);
+}
+.slide_4{
+  background: url(../img/hero/slide_1.jpg);
 }
 
 
