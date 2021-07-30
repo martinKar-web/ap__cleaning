@@ -1,0 +1,35 @@
+.footer {
+  padding: 7rem 5rem 0 5rem;
+
+  .footer__itemsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 2rem;
+
+    .footer__item {
+      flex-basis: 20%;
+    }
+
+    .footer__icon {
+      height: 20px;
+    }
+  }
+  .footer__line {
+      width: 80%;
+      height: 3px;
+      background-color: lightgray;
+    }
+
+    .footer__logo{
+      height: 100px;
+    }
+
+    .footer__lastItems{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+}

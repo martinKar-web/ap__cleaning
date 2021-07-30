@@ -1,0 +1,37 @@
+.contact__section{
+  padding: 5rem;
+  background-color: $primaryColor;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .contact__info{
+    flex: 0.5;
+  }
+
+  .contact__form{
+    flex: 0.5;
+  }
+}
+
+.contact__form{
+  form{
+    width: 500px;
+  }
+
+  .form__element{
+    margin: 1rem 1rem;
+
+    input, textarea{
+      width: 100%;
+      padding: .5rem 1rem;
+      border: 1px solid $secondaryColor;
+      border-radius: 5px;
+    }
+
+    .input__field{
+      height: 30px;
+    }
+  }
+}

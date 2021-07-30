@@ -1,0 +1,42 @@
+.our__contacts{
+  background-color: $secondaryColor;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 5rem;
+
+  .contact{
+    display: flex;
+    align-items: center;
+
+    .info{
+      margin-left: 1rem;
+      color: #fafafa;
+
+      p:nth-child(1){
+        color: #fafafa;
+      }
+
+      p:nth-child(2){
+        font-size: 0.8rem;
+        font-weight: 100;
+      }
+
+      p{
+        line-height: 1.5rem;
+      }
+    }
+  }
+
+  .phone__icon > img{
+    height: 20px;
+  }
+
+  .email__icon > img{
+    height: 25px;
+  }
+
+  .horn__icon > img{
+    height: 30px;
+  }
+}
