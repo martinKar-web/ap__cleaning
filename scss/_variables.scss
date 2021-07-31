@@ -1,6 +1,10 @@
 $primaryColor: #1bbce8;
 $cardIconColor:#B0B7B6;
 $secondaryColor: #163A45;
+$formColor: #19272e;
+$fontFamily: 'Raleway', sans-serif;
+$pT:9rem;
+$pL:5rem;
 
 @mixin flexBox {
   display: flex;
