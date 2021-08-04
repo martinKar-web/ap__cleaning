@@ -129,12 +129,13 @@ h2{
   }
 }
 
-@import './_swiper';
-@import './_cards';
-@import './_whyUs';
-@import './_modernCleaning';
-@import './services';
+@import './hero__slide';
+@import './cards';
+@import './whyUs';
+@import './modernCleaning';
+@import './services__slide';
 @import './counters';
+@import './take__advantage';
 @import './form';
 @import './our-contacts';
 @import './footer';

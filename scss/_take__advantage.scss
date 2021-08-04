@@ -1,0 +1,17 @@
+.take-advantage {
+  padding: $pT $pL;
+  background-color: #fafafa;
+
+  .items__container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+    h3{
+      line-height: 3.5rem;
+      font-size: 3rem;
+      text-align: center;
+    }
+  }
+}

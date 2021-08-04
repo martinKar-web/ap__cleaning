@@ -14,12 +14,14 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <!--* index css -->
-    <link rel="stylesheet" href="css/index.css" />
+    
 
     <!--* Fonts Lato and Raleway -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!--* font awesome -->
     <link
@@ -27,20 +29,30 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       referrerpolicy="no-referrer"
     />
-  </head>
-  <!--?========================== BODY ============================== -->
+
+    
+
+    <!--* index css -->
+    <link rel="stylesheet" href="css/index.css" />
+
+    
+  <!--*================================= START BODY ================================== -->
   <body>
     <header class="header">
       <!--* logo -->
       <div class="logo__container">
-        <img class="logo" src="./logo/final_logo.png" alt="ap cleaning logo">
+        <img
+          class="logo"
+          src="./logo/final_logo.png"
+          alt="ap cleaning logo"
+        />
       </div>
 
       <!--* contacts -->
       <div class="contacts__container">
         <div class="contact">
           <div class="contact__icon">
-            <img src="./img/icons/phone.png" alt="">
+            <img src="./img/icons/phone.png" alt="" />
           </div>
           <div class="contact__info">
             <p class="contact__typ"><strong>Phone</strong></p>
@@ -48,7 +60,9 @@
           </div>
         </div>
         <div class="contact">
-          <div class="contact__icon"><img src="./img/icons/email.png" alt=""></div>
+          <div class="contact__icon">
+            <img src="./img/icons/email.png" alt="" />
+          </div>
           <div class="contact__info">
             <p class="contact__typ"><strong>Email</strong></p>
             <p class="contact__num">contact@apcleaning.com</p>
@@ -57,9 +71,9 @@
       </div>
       <!--* End contacts container -->
     </header>
-    <!--* End of header -->
+    <!--*================================= END HEADER ===============================-->
 
-    <!--* navigation starts here -->
+    <!--*================================= START NAVIGATION =========================-->
     <nav class="nav-bar">
       <!--* nav links -->
       <ul class="nav-list">
@@ -71,84 +85,60 @@
         <li><a href="#">CONTACT US</a></li>
       </ul>
     </nav>
-    <!--*================================= Navigation ==================================-->
+    <!--*================================= END NAVIGATION ==================================-->
 
-    <!--*================================= first swiper ======================================-->
-    <!-- Swiper -->
-    <section id="swiper">
-      <div class="swiper-container swiper1">
+    <!--*================================= START SLIDER ======================================-->
+
+    <section class="hero__sliderContainer">
+      <div class="swiper-container hero__slide">
+        <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-          <div class="swiper-slide slide slide_1">
-            <div class="swiperSlide__content">
-              <h1>
-                Cleaning services in Kampala
-              </h1>
+          <!-- Slides -->
+          <div class="swiper-slide slide__1 slide">
+            <div class="content">
+              <h1>Cleaning Services Edmonton</h1>
               <p>
                 Leave the cleaning duties to the
-                <strong>real pros</strong> and enjoy a well-deserved
-                time off! All of your cleaning needs in one place -
-                carpet, vacate, oven or even window cleaning.
+                <strong>real pros</strong> and enjoy a well-deserved time
+                off! All of your cleaning needs in one place - carpet,
+                vacate, oven or even window cleaning.
               </p>
             </div>
           </div>
-          <div class="swiper-slide slide slide_2">
-            <div class="swiperSlide__content">
-              <h1>
-                Caring for your business
-                environment
-              </h1>
-              <p>
-                A clean working environment is a safer working
-                environment.
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide slide slide_3">
-            <div class="swiperSlide__content">
-              <h1>Proffesional Staff at your Service</h1>
+          <div class="swiper-slide slide__2">
+            <div class="content">
 
-              <p>
-                If you’re not happy enough to recommend us to your
-                friends, let us know and we’ll send a team out to make
-                it right.
-              </p>
             </div>
           </div>
-          <div class="swiper-slide slide slide_4">
-            <div class="swiperSlide__content">
-              <h1>Book us 7 days a week</h1>
-              <p>
-                Our Fantastic cleaning services in Uganda are
-                available all week long. We work around your schedule,
-                not the other way around. This is how we make your
-                life a bit easier.
-              </p>
-            </div>
-          </div>
+          <div class="swiper-slide slide__3">Slide 3</div>
+          <div class="swiper-slide slide__4">Slide 4</div> 
         </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
+        <!-- If we need pagination -->
+        <!--<div class="swiper-pagination"></div>-->
+
+        <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </section>
-  
-    <!--*=========================== end swiper =================================-->
 
-    <!--*=========================== start cards section ========================-->
+    <!--*=========================== END SLIDER =================================-->
+
+    <!--*=========================== START CARDS ========================-->
     <section class="cards">
       <div class="cards__container">
         <!--* card 1 -->
         <div class="card">
           <!-- card logo -->
           <div class="card__logo">
-            <img src="./img/icons_2/house (2).png" alt="">
+            <img src="./img/icons_2/house (2).png" alt="" />
           </div>
           <!-- card content -->
           <div class="card__content">
             <h3>House Cleaning</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Iure blanditiis officia dicta eos et nostrum?
+              Lorem ipsum dolor sit, amet consectetur adipisicing
+              elit. Iure blanditiis officia dicta eos et nostrum?
             </p>
           </div>
         </div>
@@ -157,15 +147,15 @@
         <div class="card">
           <!-- card logo -->
           <div class="card__logo">
-            <img src="./img/icons_2/office (1).png" alt="">
+            <img src="./img/icons_2/office (1).png" alt="" />
           </div>
           <!-- card content -->
           <div class="card__content">
-          <h3>Office cleaning</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Iure blanditiis officia dicta eos et nostrum?
-          </p>
+            <h3>Office cleaning</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing
+              elit. Iure blanditiis officia dicta eos et nostrum?
+            </p>
           </div>
         </div>
 
@@ -173,32 +163,34 @@
         <div class="card">
           <!-- card logo -->
           <div class="card__logo">
-            <img src="./img/icons_2/confetti.png" alt="">
+            <img src="./img/icons_2/confetti.png" alt="" />
           </div>
           <!-- card content -->
           <div class="card__content">
-          <h3>After Party cleaning</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Iure blanditiis officia dicta eos et nostrum?
-          </p>
+            <h3>After Party cleaning</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing
+              elit. Iure blanditiis officia dicta eos et nostrum?
+            </p>
           </div>
-          
         </div>
       </div>
+      <!--*================================= END CARDS ===============================-->
 
-      <!--*========================= start modern cleaning ===================-->
-    <section class="modernCleaning">
-      <h2>Modern cleaning for modern lives</h2>
-      <div class="underline"></div>
-      <p>
-        Our professional and qualified staff finish cleaning jobs quickly and fast. We have the <strong>people</strong> to keep it personalised and the <strong>technology</strong> to keep it efficient
-      </p>
-    </section>
+      <!--*========================= START MODERN CLEANING ===================-->
+      <section class="modernCleaning">
+        <h2>Modern cleaning for modern lives</h2>
+        <div class="underline"></div>
+        <p>
+          Our professional and qualified staff finish cleaning jobs
+          quickly and fast. We have the <strong>people</strong> to
+          keep it personalised and the <strong>technology</strong> to
+          keep it efficient
+        </p>
+      </section>
     </section>
 
-    <!--*================================= start whyUs section ===============================-->
-    <!--*=====================================================================================-->
+    <!--*================================= START WHY US ===============================-->
 
     <section class="whyUs">
       <h2>Why Choose Us</h2>
@@ -210,13 +202,16 @@
             <h3>Proffessional Service</h3>
             <div class="line"></div>
             <p>
-              We work with licensed technicians, and
-              our equipment is modern, tested and well maintained.
+              We work with licensed technicians, and our equipment is
+              modern, tested and well maintained.
             </p>
           </div>
           <!-- image -->
           <div class="whyUs__itemImage">
-            <img src="./img/whyUs/gettyimages-1294313698-612x612.jpg" alt="image_1" />
+            <img
+              src="./img/whyUs/gettyimages-1294313698-612x612.jpg"
+              alt="image_1"
+            />
           </div>
         </div>
 
@@ -232,7 +227,12 @@
               combine different services.
             </p>
           </div>
-          <div class="whyUs__itemImage"><img src="./img/whyUs/gettyimages-1208317984-612x612.jpg" alt="" /></div>
+          <div class="whyUs__itemImage">
+            <img
+              src="./img/whyUs/gettyimages-1208317984-612x612.jpg"
+              alt=""
+            />
+          </div>
         </div>
         <!--* item 3 -->
         <div class="whyUs__item">
@@ -241,13 +241,17 @@
             <div class="line"></div>
 
             <p>
-              Our cleaning services are available
-              all week long. We work around your schedule, not the
-              other way around. This is how we make your life a bit
-              easier.
+              Our cleaning services are available all week long. We
+              work around your schedule, not the other way around.
+              This is how we make your life a bit easier.
             </p>
           </div>
-          <div class="whyUs__itemImage"><img src="./img/whyUs/gettyimages-1208317984-612x612.jpg" alt="" /></div>
+          <div class="whyUs__itemImage">
+            <img
+              src="./img/whyUs/gettyimages-1208317984-612x612.jpg"
+              alt=""
+            />
+          </div>
         </div>
         <!--* item 4 -->
         <div class="whyUs__item">
@@ -256,103 +260,49 @@
             <div class="line"></div>
 
             <p>
-              Last-minute switches, next-day service, thunderstorms in the forecast—sometimes what a situation needs most is flexibility. When your plans change, so can ours.
+              Last-minute switches, next-day service, thunderstorms in
+              the forecast—sometimes what a situation needs most is
+              flexibility. When your plans change, so can ours.
             </p>
           </div>
-          <div class="whyUs__itemImage"><img src="./img/whyUs/gettyimages-1130200250-612x612.jpg" alt="" /></div>
+          <div class="whyUs__itemImage">
+            <img
+              src="./img/whyUs/gettyimages-1130200250-612x612.jpg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </section>
-    <!--* ============================== End whyUs section ================================= -->
+    <!--* ============================== END WHY US SECTION ================================= -->
 
-    <!--* ============================== Start Services section ============================ -->
+    <!--* ============================== SERVICES SECTION ============================ -->
     <section id="services">
       <h2>Our services</h2>
       <div class="underline"></div>
 
-      <div class="swiper__two">
-        <!-- Swiper -->
-        <div class="swiper-container swiper2">
-          <div class="swiper-wrapper">
-            <!-- slide 1 -->
-            <div class="swiper-slide swiperSlide2 slide_1">
-              <div class="swiperSlide__image">
-              </div>
-              <div class="swiperSlide__text">
-                <h3>Sofa and Shampooing</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, perspiciatis laborum quibusdam quo accusantium qui distinctio. Facere aperiam doloribus odit.</p>
-              </div>
-            </div>
-            <!-- slide 2 -->
-            <div class="swiper-slide swiperSlide2 slide_2">
-              <div class="swiperSlide__image">
-              </div>
-              <div class="swiperSlide__text">
-                <h3>Steam cleaning</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, perspiciatis laborum quibusdam quo accusantium qui distinctio. Facere aperiam doloribus odit.</p>
-              </div>
-            </div>
-            <!-- slide 2 -->
-            <div class="swiper-slide swiperSlide2 slide_3">
-              <div class="swiperSlide__image">
-              </div>
-              <div class="swiperSlide__text">
-                <h3>After party cleaning</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, perspiciatis laborum quibusdam quo accusantium qui distinctio. Facere aperiam doloribus odit.</p>
-              </div>
-            </div>
-            <!-- slide 2 -->
-            <div class="swiper-slide swiperSlide2 slide_4">
-              <div class="swiperSlide__image">
-              </div>
-              <div class="swiperSlide__text">
-                <h3>Commercial cleaning</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, perspiciatis laborum quibusdam quo accusantium qui distinctio. Facere aperiam doloribus odit.</p>
-              </div>
-            </div>
-            <!-- slide 2 -->
-            <div class="swiper-slide swiperSlide2 slide_5">
-              <div class="swiperSlide__image">
-              </div>
-              <div class="swiperSlide__text">
-                <h3>Floor polishing</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, perspiciatis laborum quibusdam quo accusantium qui distinctio. Facere aperiam doloribus odit.</p>
-              </div>
-            </div>
-            <!-- slide 2 -->
-            <div class="swiper-slide swiperSlide2 slide_6">
-              <div class="swiperSlide__image">
-              </div>
-              <div class="swiperSlide__text">
-                <h3>Home cleaning</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, perspiciatis laborum quibusdam quo accusantium qui distinctio. Facere aperiam doloribus odit.</p>
-              </div>
-            </div>
-            <!-- slide 2 -->
-            <div class="swiper-slide swiperSlide2 slide_7">
-              <div class="swiperSlide__image">
-              </div>
-              <div class="swiperSlide__text">
-                <h3>General and deep Cleaning</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, perspiciatis laborum quibusdam quo accusantium qui distinctio. Facere aperiam doloribus odit.</p>
-              </div>
-            </div>
-            <!-- slide 2 -->
-            <div class="swiper-slide swiperSlide2 slide_8">
-              <div class="swiperSlide__image">
-              </div>
-              <div class="swiperSlide__text">
-                <h3>Move in/Move out</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, perspiciatis laborum quibusdam quo accusantium qui distinctio. Facere aperiam doloribus odit.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination swiper-pagination2"></div>
+      <div class="swiper-container services__slide">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide slide__1">Slide 1</div>
+          <div class="swiper-slide slide__2">Slide 2</div>
+          <div class="swiper-slide slide__3">Slide 3</div>
+          <div class="swiper-slide slide__4">Slide 4</div> 
+          <div class="swiper-slide slide__5">Slide 5</div> 
+          <div class="swiper-slide slide__6">Slide 6</div> 
+          <div class="swiper-slide slide__7">Slide 7</div> 
+          <div class="swiper-slide slide__8">Slide 8</div> 
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <!--<div class="swiper-scrollbar"></div>-->
       </div>
       
     </section>
@@ -360,22 +310,34 @@
 
     <!--* ============================== COUNTER SECTION ============================ -->
     <section class="counters">
-        <div class="counter__item">
-          <h3 class='counter' data-target='340'>340</h3>
-          <p>PROJECTS <br> FINISHED</p>
-        </div>
-        <div class="counter__item">
-          <h3 class='counter' data-target='30'>30</h3>
-          <p>OUR <br> TEAM</p>
-        </div>
-        <div class="counter__item">
-          <h3 class='counter' data-target='200'>250</h3>
-          <p>SATISFIED <br> CLIENTS</p>
-        </div>
-        <div class="counter__item">
-          <h3 class='counter' data-target='450'>450</h3>
-          <p>HOURS <br> OF WORK</p>
-        </div>
+      <div class="counter__item">
+        <h3 class="counter" data-target="340">340</h3>
+        <p>
+          PROJECTS <br />
+          FINISHED
+        </p>
+      </div>
+      <div class="counter__item">
+        <h3 class="counter" data-target="30">30</h3>
+        <p>
+          OUR <br />
+          TEAM
+        </p>
+      </div>
+      <div class="counter__item">
+        <h3 class="counter" data-target="200">250</h3>
+        <p>
+          SATISFIED <br />
+          CLIENTS
+        </p>
+      </div>
+      <div class="counter__item">
+        <h3 class="counter" data-target="450">450</h3>
+        <p>
+          HOURS <br />
+          OF WORK
+        </p>
+      </div>
     </section>
     <!--* ============================== END COUNTER SECTION ============================ -->
 
@@ -388,26 +350,48 @@
       <div class="contact__form">
         <form>
           <div class="form__element">
-            <input type="text" class='input__field' placeholder="Your full name" name="fullName">
+            <input
+              type="text"
+              class="input__field"
+              placeholder="Your full name"
+              name="fullName"
+            />
           </div>
           <div class="form__element">
-            <input type="text" class='input__field' placeholder='email@email.com' name="email">
+            <input
+              type="text"
+              class="input__field"
+              placeholder="email@email.com"
+              name="email"
+            />
           </div>
           <div class="form__element">
-            <textarea placeholder="Your message" class='text__box' name="message" cols="30" rows="10"></textarea>
+            <textarea
+              placeholder="Your message"
+              class="text__box"
+              name="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="form__element">
+            <button type="submit" class="contact__btn">Submit</button>
           </div>
         </form>
       </div>
     </section>
-    
-    <!--* ============================== End Contact section ============================ -->
 
-    <!--* ==============================  Our Contacts section ============================ -->
+    <!--* ============================== END CONTACT SECTION ============================ -->
+
+    <!--* ==============================  START OUR CONTACT SECTION ============================ -->
     <section class="our__contacts">
       <!-- phone -->
       <div class="contact phone">
         <div class="phone__icon">
-          <img src="./img/contact_us/phone-call.png" alt="phone icon">
+          <img
+            src="./img/contact_us/phone-call.png"
+            alt="phone icon"
+          />
         </div>
         <div class="phone__info info">
           <p><strong>+1 563 987 654</strong></p>
@@ -417,7 +401,10 @@
       <!-- email -->
       <div class="contact email">
         <div class="email__icon">
-          <img src="./img/contact_us/mail (1).png" alt="envelope icon">
+          <img
+            src="./img/contact_us/mail (1).png"
+            alt="envelope icon"
+          />
         </div>
         <div class="email__info info">
           <p><strong>info@apcleaning.com</strong></p>
@@ -427,7 +414,10 @@
       <!-- quote -->
       <div class="contact quote">
         <div class="horn__icon">
-          <img src="./img/contact_us/bull-horn-announcer.png" alt="horn icon">
+          <img
+            src="./img/contact_us/bull-horn-announcer.png"
+            alt="horn icon"
+          />
         </div>
         <div class="quote__info info">
           <p><strong>Request a quote</strong></p>
@@ -435,77 +425,102 @@
         </div>
       </div>
     </section>
-    <!--* ============================== End Our Contact section ============================ -->
+    <!--* ============================== END CONTACT SECTION ============================ -->
 
-    <!--* ============================== Begin Footer ============================ -->
+    <!--* ============================== START FOOTER ============================ -->
     <footer class="footer">
       <div class="footer__itemsContainer">
-
-      <div class='footer__item'>
-        <h3>Our Company</h3>
-        <div class="info">
-          <p class="about">Lorem ipsum dolor sit amet. Accusamus veritatis tempora obcaecati dolorum, laborum soluta saepe ea qui laudantium aspernatur.</p>
-          <p class="about">Obcaecati dolorum, laborum soluta saepe ea qui laudantium aspernatur dolor consequatur eligendi a, cum nam quas totam quam voluptas.</p>
-        </div>
-      </div>    
-      <div class='footer__item why_us'>
-        <h3>Why Us?</h3>
-        <div class="info">
-          <p>Guaranteed the best price</p>
-          <p>Call us to make appointment</p>
-          <p>Flexible working hours</p>
-          <p>We make your house cleaner</p>
-          <p>100% satisfaction</p>
-        </div>
-      </div>
-      <div class='footer__item what_we_do'>
-        <h3>What We Do</h3>
-        <div class="info">
-          <p>House cleaning</p>
-          <p>Interior, carpets, sofa</p>
-          <p>Dishwashing, Kitchen</p>
-          <p>Bathroom & Toilet</p>
-          <p>Dusting, vacuum</p>
-        </div>
-      </div>
-      <div class='footer__item contact_info   '>
-        <h3>Contact Info</h3>
-        <div class="info">
-          <div class="contact__item">
-            <img class="footer__icon" src="./img/contact_us/phone-call.png" alt="">
-            <p>Call Us 06 8585 1218</p>
-          </div>
-          <div class="contact__item">
-            <img class="footer__icon" src="./img/contact_us/mail (1).png" alt="">
-            <p>info@apcleaning.com</p>
-          </div>
-          <div class="contact__item">
-            <img class="footer__icon" src="./img/contact_us/pin.png" alt="">
-            <p>Majoor Kampsstraat 12, 1411 TT Naarden.</p>
-          </div>
-          <div class="contact__item">
-            <img class="footer__icon" src="./img/contact_us/clock-circular-outline.png" alt="">
-            <p>Monday-Friday, 9am-5pm</p>
+        <div class="footer__item">
+          <h3>Our Company</h3>
+          <div class="info">
+            <p class="about">
+              Lorem ipsum dolor sit amet. Accusamus veritatis tempora
+              obcaecati dolorum, laborum soluta saepe ea qui
+              laudantium aspernatur.
+            </p>
+            <p class="about">
+              Obcaecati dolorum, laborum soluta saepe ea qui
+              laudantium aspernatur dolor consequatur eligendi a, cum
+              nam quas totam quam voluptas.
+            </p>
           </div>
         </div>
-      </div>
-
+        <div class="footer__item why_us">
+          <h3>Why Us?</h3>
+          <div class="info">
+            <p>Guaranteed the best price</p>
+            <p>Call us to make appointment</p>
+            <p>Flexible working hours</p>
+            <p>We make your house cleaner</p>
+            <p>100% satisfaction</p>
+          </div>
+        </div>
+        <div class="footer__item what_we_do">
+          <h3>What We Do</h3>
+          <div class="info">
+            <p>House cleaning</p>
+            <p>Interior, carpets, sofa</p>
+            <p>Dishwashing, Kitchen</p>
+            <p>Bathroom & Toilet</p>
+            <p>Dusting, vacuum</p>
+          </div>
+        </div>
+        <div class="footer__item contact_info">
+          <h3>Contact Info</h3>
+          <div class="info">
+            <div class="contact__item">
+              <img
+                class="footer__icon"
+                src="./img/contact_us/phone-call.png"
+                alt=""
+              />
+              <p>Call Us 06 8585 1218</p>
+            </div>
+            <div class="contact__item">
+              <img
+                class="footer__icon"
+                src="./img/contact_us/mail (1).png"
+                alt=""
+              />
+              <p>info@apcleaning.com</p>
+            </div>
+            <div class="contact__item">
+              <img
+                class="footer__icon"
+                src="./img/contact_us/pin.png"
+                alt=""
+              />
+              <p>Majoor Kampsstraat 12, 1411 TT Naarden.</p>
+            </div>
+            <div class="contact__item">
+              <img
+                class="footer__icon"
+                src="./img/contact_us/clock-circular-outline.png"
+                alt=""
+              />
+              <p>Monday-Friday, 9am-5pm</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="footer__lastItems">
-        <img class='footer__logo' src="./logo/final_logo.png" alt="logo">
-        <p class="copyright">apcleaning canada &copy; 2021. All rights reserved</p>
+        <img
+          class="footer__logo"
+          src="./logo/final_logo.png"
+          alt="logo"
+        />
+        <p class="copyright">
+          apcleaning canada &copy; 2021. All rights reserved
+        </p>
       </div>
     </footer>
-    <!--* ============================== End Footer ============================ -->
-
-
-
+    <!--* ============================== END FOOTER ============================ -->
 
     <!--* swiper js -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!--* Initialize Swiper -->
     <script src="./js/swiper.js"></script>
-    <!--<script src="./js/counter.js"></script>-->
   </body>
 </html>
+
+
