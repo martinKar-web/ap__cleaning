@@ -3,6 +3,10 @@
   font-family: 'Raleway', sans-serif;
 }
 
+.img {
+  display: block;
+}
+
 body {
   background: #e2e2e2;
   font-family: 'Raleway', sans-serif;
@@ -170,7 +174,7 @@ h2 {
 }
 
 .hero__sliderContainer {
-  height: 90vh;
+  height: 100vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -179,7 +183,7 @@ h2 {
   height: 100%;
 }
 
-.hero__sliderContainer .swiper-container .slide {
+.hero__sliderContainer .swiper-container .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,13 +193,36 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
-  padding: 0 7rem;
 }
 
-.hero__sliderContainer .swiper-container .content {
+.hero__sliderContainer .swiper-container .swiper-slide .swiper__slideContent {
   width: 50%;
-  background-color: lightgreen;
+  margin-left: 7rem;
+}
+
+.hero__sliderContainer .swiper-container .swiper-slide .swiper__slideContent h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.hero__sliderContainer .swiper-container .swiper-slide .swiper__slideContent p {
+  line-height: 2rem;
+}
+
+.hero__sliderContainer .swiper-container .slide__1 {
+  background: url("https://media.gettyimages.com/photos/high-angle-view-of-woman-holding-mop-to-wash-floor-picture-id1220206476?k=6&m=1220206476&s=612x612&w=0&h=eXC1D4UNQHVmuhr2nyFY2m-UpYGUt6fRmUgGfgwzWdM=");
+}
+
+.hero__sliderContainer .swiper-container .slide__2 {
+  background: url("https://media.gettyimages.com/photos/high-angle-view-of-woman-holding-mop-to-wash-floor-picture-id1220206476?k=6&m=1220206476&s=612x612&w=0&h=eXC1D4UNQHVmuhr2nyFY2m-UpYGUt6fRmUgGfgwzWdM=");
+}
+
+.hero__sliderContainer .swiper-container .slide__3 {
+  background: url("https://media.gettyimages.com/photos/high-angle-view-of-woman-holding-mop-to-wash-floor-picture-id1220206476?k=6&m=1220206476&s=612x612&w=0&h=eXC1D4UNQHVmuhr2nyFY2m-UpYGUt6fRmUgGfgwzWdM=");
+}
+
+.hero__sliderContainer .swiper-container .slide__4 {
+  background: url("https://media.gettyimages.com/photos/high-angle-view-of-woman-holding-mop-to-wash-floor-picture-id1220206476?k=6&m=1220206476&s=612x612&w=0&h=eXC1D4UNQHVmuhr2nyFY2m-UpYGUt6fRmUgGfgwzWdM=");
 }
 
 .cards {
@@ -296,7 +323,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   padding: 5rem;
-  background: #f2f2f2;
+  background: #ffffff;
   margin-top: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -448,11 +475,18 @@ h2 {
   padding: 5rem 6rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #ccc;
 }
 
 #services h2 {
   font-size: 3rem;
   text-align: center;
+}
+
+#services .underline {
+  width: 200px;
+  height: 3px;
+  background-color: #1bbce8;
 }
 
 #services .services__slide {
@@ -467,19 +501,50 @@ h2 {
 }
 
 #services .swiper-slide {
-  text-align: center;
-  font-size: 18px;
   background: #fff;
   height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+#services .swiper-slide .slide__image {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+#services .swiper-slide .slide__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#services .swiper-slide .slide__info {
+  padding: 1rem;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+#services .swiper-slide .slide__info h3 {
+  margin-bottom: 1rem;
+}
+
+#services .swiper-slide .slide__info p {
+  line-height: 1.5rem;
+  font-size: 0.9rem;
 }
 
 .counters {
@@ -616,6 +681,10 @@ h2 {
 
 .contact__form .form__element .input__field {
   height: 30px;
+}
+
+.contact__form .contact__button {
+  padding: .8rem 1.5rem;
 }
 
 .our__contacts {

@@ -19,7 +19,7 @@ let swiper__2 = new Swiper('.services__slide', {
   },
   autoplay: {
     delay: 2500,
-    disableOnInteraction: false,
+    disableOnInteraction: true,
   },
   loop: true,
 });

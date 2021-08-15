@@ -1,0 +1,63 @@
+#services {
+  width: 100%;
+  padding: 5rem 6rem;
+  box-sizing: border-box;
+  background-color: #ccc;
+
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .underline{
+    width: 200px;
+    height: 3px;
+    background-color: $primaryColor;
+  }
+
+  .services__slide {
+    margin-top: 3rem;
+    height: 500px;
+    width: 100%;
+  }
+
+  // default styles
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide { 
+    background: #fff;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    .slide__image{
+      flex: 0.5;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .slide__info{
+      padding: 1rem;
+      flex:0.5;
+
+      h3{
+        margin-bottom: 1rem;
+      }
+
+      p{
+        line-height: 1.5rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
