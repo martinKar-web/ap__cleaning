@@ -1,5 +1,6 @@
 {
   "editor.fontFamily": "sf mono",
   "editor.fontWeight": "300",
+  "files.autoSave": "afterDelay",
   "editor.fontSize": 16
 }
