@@ -22,4 +22,15 @@ let swiper__2 = new Swiper('.services__slide', {
     disableOnInteraction: true,
   },
   loop: true,
+  breakpoints: {
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    20: {
+      slidesPerView: 1,
+      spaceBetween:30
+    }
+  }
 });

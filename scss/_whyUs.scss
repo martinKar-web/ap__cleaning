@@ -80,6 +80,10 @@
           height: 2.5px;
           background-color: #163a45;
           margin: 0.5rem 0;
+
+          @media only screen and (max-width:769px){
+            background-color: hsl(194, 52%, 35%);
+          }
         }
 
         h3 {

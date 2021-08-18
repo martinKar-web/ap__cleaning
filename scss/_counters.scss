@@ -1,14 +1,15 @@
 .counters {
-  background: url('../img/cleaning-images/team_cleaning.jpg');
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
   background-size: cover;
   background-repeat: no-repeat;
   background-origin: center;
   padding: 9rem 5rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   position: relative;
   z-index: -500;
+  background: url('../img/cleaning-images/team_cleaning.jpg');
 
   &::after {
     content: '';
@@ -25,6 +26,7 @@
     display: flex;
     align-items: center;
     color: #fafafa;
+    z-index: 500;
 
     h3,p{
       padding: 1rem;

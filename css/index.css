@@ -628,6 +628,12 @@ h2 {
   margin: 0.5rem 0;
 }
 
+@media only screen and (max-width: 769px) {
+  .whyUs .whyUs__itemsContainer .whyUs__item .whyUs__itemContent .line {
+    background-color: #2b7288;
+  }
+}
+
 .whyUs .whyUs__itemsContainer .whyUs__item .whyUs__itemContent h3 {
   font-size: 1.25rem;
 }
@@ -671,6 +677,12 @@ h2 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #ccc;
+}
+
+@media only screen and (max-width: 769px) {
+  #services {
+    padding: 5rem 2rem;
+  }
 }
 
 #services h2 {
@@ -743,11 +755,6 @@ h2 {
 }
 
 .counters {
-  background: url("../img/cleaning-images/team_cleaning.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-origin: center;
-  padding: 9rem 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -756,8 +763,15 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: center;
+  padding: 9rem 5rem;
   position: relative;
   z-index: -500;
+  background: url("../img/cleaning-images/team_cleaning.jpg");
 }
 
 .counters::after {
@@ -779,6 +793,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   color: #fafafa;
+  z-index: 500;
 }
 
 .counters .counter__item h3, .counters .counter__item p {
