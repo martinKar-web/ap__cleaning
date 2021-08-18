@@ -4,9 +4,13 @@
   justify-content: center;
   align-items: center;
   padding: 5rem;
-  background: #ffffff;
+  background: #F2F2F2;
   margin-top: 0;
   flex-wrap: wrap;
+
+  @media only screen and (max-width: 769px) {
+    padding: 5rem 1rem;
+  }
 
   .whyUs__itemsContainer {
     display: flex;
@@ -24,14 +28,23 @@
       border-radius: 2px;
       flex: 400px 1 1;
 
-      &:hover .whyUs__itemContent::before{
-        width: 100%;
-      } 
+      @media only screen and (max-width: 769px) {
+        margin-bottom: 3rem;
+        flex-basis: 260px;
 
-      &:hover .whyUs__itemContent{
+        &:nth-of-type(even) {
+          flex-direction: row-reverse;
+        }
+      }
+
+      &:hover .whyUs__itemContent::before {
+        width: 100%;
+      }
+
+      &:hover .whyUs__itemContent {
         color: #fafafa;
 
-        .line{
+        .line {
           background-color: $primaryColor;
         }
       }
@@ -44,25 +57,28 @@
         padding: 2rem;
         position: relative;
         color: #fafafa;
-          z-index: 1;
+        z-index: 1;
 
+        @media only screen and (max-width: 769px) {
+          width: 100%;
+        }
 
-        &::before{
-          content: "";
+        &::before {
+          content: '';
           width: 0%;
           height: 100%;
           position: absolute;
           top: 0;
           left: 0;
-          background-color: #163A45;
+          background-color: #163a45;
           transition: width 0.4s ease;
           z-index: -1;
         }
 
-        .line{
+        .line {
           width: 50px;
           height: 2.5px;
-          background-color: #163A45;
+          background-color: #163a45;
           margin: 0.5rem 0;
         }
 
@@ -78,12 +94,19 @@
           margin-top: 0.5rem;
           font-family: Arial, sans-serif;
 
+          @media only screen and (max-width: 769px) {
+            font-size: 1rem;
+  }
         }
       }
 
       .whyUs__itemImage {
         width: 40%;
         height: 100%;
+
+        @media only screen and (max-width: 769px) {
+          display: none;
+        }
 
         img {
           object-fit: cover;

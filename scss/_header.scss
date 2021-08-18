@@ -21,16 +21,21 @@
 
   .contacts__container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: auto;
     font-family: 'Ralewar', sans-serif;
+
+    @media only screen and (max-width: 769px){
+      margin-left: 3rem;
+    }
 
     .contact{
       display: flex;
       justify-content: baseline;
       align-items: center;
       width: auto;
+      flex: 1;
 
       .contact__icon img{
         height: 28px;
