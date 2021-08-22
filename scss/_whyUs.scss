@@ -12,6 +12,14 @@
     padding: 5rem 1rem;
   }
 
+  .underline {
+    height: 3px;
+    background-color: $primaryColor;
+    width: 70px;
+    margin: 0.7rem 0;
+    align-self: center;
+  }
+
   .whyUs__itemsContainer {
     display: flex;
     justify-content: space-around;

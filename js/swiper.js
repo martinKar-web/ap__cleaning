@@ -24,6 +24,11 @@ let swiper__2 = new Swiper('.services__slide', {
   loop: true,
   breakpoints: {
     // when window width is >= 480px
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    // when window width is >= 480px
     480: {
       slidesPerView: 2,
       spaceBetween: 30
