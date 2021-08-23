@@ -406,7 +406,7 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 500px;
+    height: 1000px;
     margin-top: -20px;
   }
 }
@@ -434,7 +434,8 @@ h2 {
 @media only screen and (max-width: 769px) {
   .cards__container .card {
     width: 70%;
-    padding: 2rem 3rem;
+    height: 50px;
+    padding: 0rem 1rem;
   }
 }
 
@@ -874,10 +875,29 @@ h2 {
           align-items: center;
 }
 
+@media only screen and (max-width: 769px) {
+  .contact__section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .contact__section .contact__info {
   -webkit-box-flex: 0.5;
       -ms-flex: 0.5;
           flex: 0.5;
+}
+
+@media only screen and (max-width: 769px) {
+  .contact__section .contact__info {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 }
 
 .contact__section .contact__info h2 {
@@ -901,6 +921,13 @@ h2 {
 
 .contact__form form {
   width: 500px;
+}
+
+@media only screen and (max-width: 769px) {
+  .contact__form form {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
 }
 
 .contact__form .form__element {
@@ -933,6 +960,12 @@ h2 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 2rem 5rem;
+}
+
+@media only screen and (max-width: 769px) {
+  .our__contacts {
+    padding: 2rem .7rem;
+  }
 }
 
 .our__contacts .contact {
@@ -1016,6 +1049,15 @@ h2 {
 .footer .footer__itemsContainer .footer__item {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
+}
+
+@media only screen and (max-width: 769px) {
+  .footer .footer__itemsContainer .footer__item {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .footer .footer__itemsContainer .footer__item .about {

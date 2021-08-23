@@ -5,6 +5,10 @@
   justify-content: space-around;
   padding: 2rem 5rem;
 
+  @media only screen and (max-width: 769px){
+    padding: 2rem .7rem;
+  }
+
   .contact{
     display: flex;
     align-items: center;
