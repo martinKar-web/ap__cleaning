@@ -7,6 +7,10 @@
     z-index: -1000;
   }
 
+  @media screen and (max-width: 481px) {
+    height: 300px;
+  }
+
   .swiper-container {
     height: 100%;
 
@@ -19,22 +23,42 @@
       justify-content: flex-start;
       align-items: center;
 
-      //height: 100%;
+      //@media screen and (max-width: 481px) {
+      //  padding: 1rem;
+      //}
 
       .swiper__slideContent {
         width: 50%;
-        //background-color: lightgreen;
         margin-left: 7rem;
+
+        @media screen and (max-width: 481px) {
+          width: 100%;
+          margin: 0 2rem;
+          text-align: center;
+          padding: 0 1rem;
+        }
 
         h1 {
           font-size: 3rem;
           line-height: 3rem;
-          color: #FFFF00;
+          color: #ffff00;
 
           @media only screen and (max-width: 769px) {
             font-size: 2rem;
             font-weight: 500;
             line-height: 2.5rem;
+          }
+
+          @media screen and (max-width: 481px) {
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            //margin-bottom: 0.2rem;    
+          }
+
+          br{
+            @media screen and (max-width: 481px){
+              display: none;
+            }
           }
         }
 
@@ -44,7 +68,6 @@
           font-weight: 500;
 
           @media only screen and (max-width: 769px) {
-            
           }
         }
       }

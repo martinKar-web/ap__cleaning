@@ -4,10 +4,21 @@ let swiper = new Swiper('.hero__slide', {
         prevEl: '.swiper-button-prev',
   },
   autoplay: {
-        delay: 2500,
+        delay: 3000,
         disableOnInteraction: true,
   },
-  loop:true,
+  loop: true,
+  effect: "slide",
+  // Responsive breakpoints
+  breakpoints: {
+    320: {
+      effect: "flip",
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: true,
+      },
+    }
+  }
 });
 
 let swiper__2 = new Swiper('.services__slide', {
@@ -36,7 +47,6 @@ let swiper__2 = new Swiper('.services__slide', {
     20: {
       slidesPerView: 1,
       spaceBetween: 30,
-      effect: 'fade',
     }
   }
 });

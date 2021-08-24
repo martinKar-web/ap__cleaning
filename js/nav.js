@@ -12,8 +12,9 @@ const nav_links = document.querySelectorAll('.nav-link');
 nav_links.forEach(nav_link => {
   nav_link.addEventListener('click', (e) => {
     nav_list.classList.remove('active');
-    console.log('clicked');
-  })
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+    })
 })
 
 // burger animation
