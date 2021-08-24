@@ -7,66 +7,94 @@
   font-family: 'Raleway', sans-serif;
   position: relative;
 
-  @media only screen and  (max-width:769px){
+  @media only screen and (max-width: 769px) {
     flex-direction: column;
     padding: 1rem 5rem 3rem 5rem;
     z-index: 1000;
   }
-  .logo__container {
 
-    .logo{
-      height: 170px;
-    }
+  @media only screen and (max-width: 481px) {
+    padding: 1rem;
+    padding-top: 0;
   }
 
-  .contacts__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-    font-family: 'Ralewar', sans-serif;
+  .logo__container {
+    .logo {
+      height: 170px;
 
-    @media only screen and (max-width: 769px){
-      margin-left: 3rem;
-    }
-
-    .contact{
-      display: flex;
-      justify-content: baseline;
-      align-items: center;
-      width: auto;
-      flex: 1;
-
-      .contact__icon img{
-        height: 28px;
-        width: 28;
-      }
-
-      &:nth-child(2){
-        margin-left: 1rem;
-        border-left: 2px solid #2121211a;
-
-        //...
-        .contact__icon{
-          margin-left: 1rem;
-        }
-      }
-
-      .contact__info{
-        margin-left: 1rem;
-        color: #212121;
-      }
-
-      .contact__num{
-        margin-top: 0.2rem;
-        font-size: 0.8rem;
-        color: rgb(189, 188, 188);
-      }
-
-      .contact__typ{
-        font-size: 0.9rem;
+      @media only screen and (max-width: 481px) {
+        height: 100px;
       }
     }
   }
 }
 
+.contacts__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  font-family: 'Ralewar', sans-serif;
+
+  @media only screen and (max-width: 769px) {
+    margin-left: 3rem;
+  }
+
+  @media only screen and (max-width: 481px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .phone {
+    @media only screen and (max-width: 481px) {
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+    }
+  }
+
+  .contact {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    width: auto;
+    flex: 1;
+
+    .contact__icon img {
+      height: 28px;
+      width: 28;
+    }
+
+    &:nth-child(2) {
+      margin-left: 1rem;
+      border-left: 2px solid #2121211a;
+
+      @media only screen and (max-width: 481px) {
+        border-left: none;
+      }
+
+      //...
+      .contact__icon {
+        margin-left: 1rem;
+
+        @media only screen and (max-width: 481px) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .contact__info {
+    margin-left: 1rem;
+    color: #212121;
+  }
+
+  .contact__num {
+    margin-top: 0.2rem;
+    font-size: 0.8rem;
+    color: rgb(189, 188, 188);
+  }
+
+  .contact__typ {
+    font-size: 0.9rem;
+  }
+}

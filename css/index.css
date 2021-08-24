@@ -43,11 +43,24 @@ h2 {
   }
 }
 
+@media only screen and (max-width: 481px) {
+  .header {
+    padding: 1rem;
+    padding-top: 0;
+  }
+}
+
 .header .logo__container .logo {
   height: 170px;
 }
 
-.header .contacts__container {
+@media only screen and (max-width: 481px) {
+  .header .logo__container .logo {
+    height: 100px;
+  }
+}
+
+.contacts__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,12 +75,31 @@ h2 {
 }
 
 @media only screen and (max-width: 769px) {
-  .header .contacts__container {
+  .contacts__container {
     margin-left: 3rem;
   }
 }
 
-.header .contacts__container .contact {
+@media only screen and (max-width: 481px) {
+  .contacts__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .contacts__container .phone {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+.contacts__container .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,32 +115,44 @@ h2 {
           flex: 1;
 }
 
-.header .contacts__container .contact .contact__icon img {
+.contacts__container .contact .contact__icon img {
   height: 28px;
   width: 28;
 }
 
-.header .contacts__container .contact:nth-child(2) {
+.contacts__container .contact:nth-child(2) {
   margin-left: 1rem;
   border-left: 2px solid #2121211a;
 }
 
-.header .contacts__container .contact:nth-child(2) .contact__icon {
+@media only screen and (max-width: 481px) {
+  .contacts__container .contact:nth-child(2) {
+    border-left: none;
+  }
+}
+
+.contacts__container .contact:nth-child(2) .contact__icon {
   margin-left: 1rem;
 }
 
-.header .contacts__container .contact .contact__info {
+@media only screen and (max-width: 481px) {
+  .contacts__container .contact:nth-child(2) .contact__icon {
+    margin-left: 0;
+  }
+}
+
+.contacts__container .contact__info {
   margin-left: 1rem;
   color: #212121;
 }
 
-.header .contacts__container .contact .contact__num {
+.contacts__container .contact__num {
   margin-top: 0.2rem;
   font-size: 0.8rem;
   color: #bdbcbc;
 }
 
-.header .contacts__container .contact .contact__typ {
+.contacts__container .contact__typ {
   font-size: 0.9rem;
 }
 
