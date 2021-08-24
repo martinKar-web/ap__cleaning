@@ -443,6 +443,7 @@ h2 {
     margin: 0 2rem;
     text-align: center;
     padding: 0 1rem;
+    height: 150px;
   }
 }
 
@@ -450,6 +451,7 @@ h2 {
   font-size: 3rem;
   line-height: 3rem;
   color: #ffff00;
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 769px) {
@@ -475,24 +477,25 @@ h2 {
 
 .hero__sliderContainer .swiper-container .swiper-slide .swiper__slideContent p {
   line-height: 2rem;
-  color: #00141a;
-  font-weight: 500;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1rem;
 }
 
 .hero__sliderContainer .swiper-container .slide__1 {
-  background: url("https://media.gettyimages.com/photos/high-angle-view-of-woman-holding-mop-to-wash-floor-picture-id1220206476?k=6&m=1220206476&s=612x612&w=0&h=eXC1D4UNQHVmuhr2nyFY2m-UpYGUt6fRmUgGfgwzWdM=");
+  background: url("../ap_images/ap_kitchen.jpg");
 }
 
 .hero__sliderContainer .swiper-container .slide__2 {
-  background: url("https://media.gettyimages.com/photos/high-angle-view-of-woman-holding-mop-to-wash-floor-picture-id1220206476?k=6&m=1220206476&s=612x612&w=0&h=eXC1D4UNQHVmuhr2nyFY2m-UpYGUt6fRmUgGfgwzWdM=");
+  background: url("../ap_images/ap_cleaning_hero.jpg");
 }
 
 .hero__sliderContainer .swiper-container .slide__3 {
-  background: url("https://media.gettyimages.com/photos/high-angle-view-of-woman-holding-mop-to-wash-floor-picture-id1220206476?k=6&m=1220206476&s=612x612&w=0&h=eXC1D4UNQHVmuhr2nyFY2m-UpYGUt6fRmUgGfgwzWdM=");
+  background: url("../ap_images/business_environment.jpg");
 }
 
 .hero__sliderContainer .swiper-container .slide__4 {
-  background: url("https://media.gettyimages.com/photos/high-angle-view-of-woman-holding-mop-to-wash-floor-picture-id1220206476?k=6&m=1220206476&s=612x612&w=0&h=eXC1D4UNQHVmuhr2nyFY2m-UpYGUt6fRmUgGfgwzWdM=");
+  background: url("../ap_images/proffessional_staff.jpg");
 }
 
 .hero__sliderContainer .swiper-container .slide__1,
@@ -516,7 +519,8 @@ h2 {
   .hero__sliderContainer .swiper-container .prev::after,
   .hero__sliderContainer .swiper-container .next::after {
     font-size: 1rem;
-    color: #fafafa;
+    color: #fff;
+    font-weight: 500;
   }
 }
 
