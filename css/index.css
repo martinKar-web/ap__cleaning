@@ -176,6 +176,16 @@ h2 {
   z-index: 5000;
 }
 
+@media screen and (max-width: 481px) {
+  .nav-bar {
+    height: 80px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 0 1rem;
+  }
+}
+
 .nav-bar .nav-list {
   width: 60%;
   display: -webkit-box;
@@ -200,6 +210,26 @@ h2 {
     width: 100%;
     height: 100%;
     padding: 0 5rem;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .nav-bar .nav-list {
+    position: absolute;
+    top: 79px;
+    right: -100%;
+    width: 100%;
+    height: 400px;
+    background-color: #1bbce8;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 0 0 0;
+    z-index: 1000;
   }
 }
 
@@ -256,54 +286,81 @@ h2 {
   height: 100%;
 }
 
-.nav-bar .burger {
-  display: none;
-}
-
-@media screen and (max-width: 769px) {
-  .nav-bar .burger {
-    display: block;
-    cursor: pointer;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    margin-right: 20px;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
+@media only screen and (max-width: 481px) {
+  .nav-bar .nav-list a {
+    font-size: 1rem;
   }
 }
 
-.nav-bar .burger .burger__line1 {
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+.nav-bar .menu-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  justify-self: flex-end;
 }
 
-.nav-bar .burger .burger__line3 {
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+.nav-bar .menu-btn .menu-btn__burger {
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+          box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.nav-bar .burger div {
-  width: 40px;
-  height: 3px;
-  margin: 5px;
-  background-color: #fafafa;
-  border-radius: 3px;
-  margin-bottom: 5px;
+.nav-bar .menu-btn .menu-btn__burger::before, .nav-bar .menu-btn .menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+          box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-bar .menu-btn .menu-btn__burger::before {
+  -webkit-transform: translateY(-16px);
+          transform: translateY(-16px);
+}
+
+.nav-bar .menu-btn .menu-btn__burger::after {
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
+}
+
+.menu-btn.open .menu-btn__burger {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+  -webkit-transform: rotate(45deg) translate(35px, -35px);
+          transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+  -webkit-transform: rotate(-45deg) translate(35px, 35px);
+          transform: rotate(-45deg) translate(35px, 35px);
 }
 
 .active {

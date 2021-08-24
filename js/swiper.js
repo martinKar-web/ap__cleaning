@@ -35,7 +35,8 @@ let swiper__2 = new Swiper('.services__slide', {
     },
     20: {
       slidesPerView: 1,
-      spaceBetween:30
+      spaceBetween: 30,
+      effect: 'fade',
     }
   }
 });
