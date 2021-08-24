@@ -179,7 +179,7 @@ h2 {
 
 @media screen and (max-width: 481px) {
   .nav-bar {
-    height: 60px;
+    height: 50px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -217,10 +217,10 @@ h2 {
 @media only screen and (max-width: 481px) {
   .nav-bar .nav-list {
     position: absolute;
-    top: 60px;
+    top: 50px;
     right: -100%;
     width: 100%;
-    height: 500px;
+    height: 400px;
     background-color: #1bbce8;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -261,13 +261,6 @@ h2 {
     height: 100%;
     padding: 0;
     margin: 0;
-  }
-}
-
-@media screen and (max-width: 481px) {
-  .nav-bar .nav-list li {
-    border-bottom: 1px solid rgba(228, 228, 228, 0.5);
-    border-top: 1px solid rgba(228, 228, 228, 0.5);
   }
 }
 
@@ -312,8 +305,8 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -321,21 +314,28 @@ h2 {
 }
 
 .nav-bar .menu-btn .menu-btn__burger {
-  width: 40px;
-  height: 3px;
+  width: 100%;
+  height: 2px;
   background: #fff;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
           box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  display: none;
+}
+
+@media screen and (max-width: 481px) {
+  .nav-bar .menu-btn .menu-btn__burger {
+    display: block;
+  }
 }
 
 .nav-bar .menu-btn .menu-btn__burger::before, .nav-bar .menu-btn .menu-btn__burger::after {
   content: '';
   position: absolute;
-  width: 40px;
-  height: 3px;
+  width: 35px;
+  height: 2px;
   background: #fff;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
@@ -345,13 +345,13 @@ h2 {
 }
 
 .nav-bar .menu-btn .menu-btn__burger::before {
-  -webkit-transform: translateY(-16px);
-          transform: translateY(-16px);
+  -webkit-transform: translateY(-12px);
+          transform: translateY(-12px);
 }
 
 .nav-bar .menu-btn .menu-btn__burger::after {
-  -webkit-transform: translateY(16px);
-          transform: translateY(16px);
+  -webkit-transform: translateY(12px);
+          transform: translateY(12px);
 }
 
 .menu-btn.open .menu-btn__burger {
@@ -501,6 +501,23 @@ h2 {
 .hero__sliderContainer .swiper-container .slide__4 {
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 481px) {
+  .hero__sliderContainer .swiper-container .prev,
+  .hero__sliderContainer .swiper-container .next {
+    background: rgba(250, 250, 250, 0.2) !important;
+    height: 30px;
+    width: 20px;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .hero__sliderContainer .swiper-container .prev::after,
+  .hero__sliderContainer .swiper-container .next::after {
+    font-size: 1rem;
+    color: #fafafa;
+  }
 }
 
 .cards {
