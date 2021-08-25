@@ -424,9 +424,9 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -566,7 +566,14 @@ h2 {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 1000px;
-    margin-top: -20px;
+    margin-top: -172px;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .cards__container {
+    margin-top: -120px;
+    width: 100%;
   }
 }
 
@@ -595,6 +602,13 @@ h2 {
     width: 70%;
     height: 50px;
     padding: 0rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .cards__container .card {
+    width: 85%;
+    height: 100px;
   }
 }
 
@@ -639,14 +653,43 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3rem 5rem 5rem 3rem;
+  padding: 3rem 5rem 3rem 5rem;
   background-color: #fff;
   margin-top: 2rem;
+}
+
+@media only screen and (max-width: 481px) {
+  .modernCleaning {
+    padding: 4rem 2rem 4rem 2rem;
+    margin-top: 0;
+  }
 }
 
 .modernCleaning h2 {
   font-size: 2.3rem;
   font-weight: 700;
+}
+
+.modernCleaning h2 br {
+  display: none;
+}
+
+@media only screen and (max-width: 481px) {
+  .modernCleaning h2 br {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .modernCleaning h2 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .modernCleaning h2 {
+    width: 300px;
+  }
 }
 
 .modernCleaning .underline {
@@ -749,6 +792,14 @@ h2 {
   }
 }
 
+@media only screen and (max-width: 481px) {
+  .whyUs .whyUs__itemsContainer .whyUs__item {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+}
+
 .whyUs .whyUs__itemsContainer .whyUs__item:hover .whyUs__itemContent::before {
   width: 100%;
 }
@@ -774,6 +825,12 @@ h2 {
 }
 
 @media only screen and (max-width: 769px) {
+  .whyUs .whyUs__itemsContainer .whyUs__item .whyUs__itemContent {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 481px) {
   .whyUs .whyUs__itemsContainer .whyUs__item .whyUs__itemContent {
     width: 100%;
   }
