@@ -1,69 +1,76 @@
-.contact__section{
+.contact__section {
   padding: 5rem;
   background-color: $primaryColor;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
 
-  @media only screen and (max-width: 769px){
+  @media only screen and (max-width: 769px) {
     flex-direction: column;
     justify-content: center;
   }
 
-  .contact__info{
-    flex: 0.5;
-
-    @media only screen and (max-width: 769px){
-    text-align: center;
-    margin-bottom: 1rem;
+  @media (max-width: 481px) {
+    padding: 5rem 1.5rem;
   }
 
-    h2{
+  .contact__info {
+    flex: 0.5;
+
+    @media only screen and (max-width: 769px) {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
       color: $formColor;
     }
 
-    h2:nth-child(1){
+    h2:nth-child(1) {
       margin-bottom: 0.1rem;
     }
 
-    h2:nth-child(2){
+    h2:nth-child(2) {
       font-weight: 400;
       margin-top: 1rem;
     }
   }
 
-  .contact__form{
+  .contact__form {
     flex: 0.5;
   }
 }
 
-.contact__form{
-  form{
+.contact__form {
+  form {
     width: 500px;
 
-    @media only screen and (max-width: 769px){
-    justify-self: center;
-  }
+    @media only screen and (max-width: 769px) {
+      justify-self: center;
+    }
+
+    @media (max-width: 481px) {
+      width: 100%;
+    }
   }
 
-  .form__element{
+  .form__element {
     margin: 1rem 1rem;
 
-    input, textarea{
+    input,
+    textarea {
       width: 100%;
-      padding: .5rem 1rem;
+      padding: 0.5rem 1rem;
       border: 2px solid #19272e;
-;
       border-radius: 5px;
     }
 
-    .input__field{
+    .input__field {
       height: 30px;
     }
   }
 
-  .contact__button{
-    padding: .8rem 1.5rem;
+  .contact__button {
+    padding: 0.8rem 1.5rem;
   }
 }

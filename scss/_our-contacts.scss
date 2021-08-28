@@ -9,6 +9,12 @@
     padding: 2rem .7rem;
   }
 
+  @media (max-width: 481px){
+    flex-direction: column;
+    height: 300px;
+    justify-content: baseline;
+  }
+
   .contact{
     display: flex;
     align-items: center;

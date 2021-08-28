@@ -179,7 +179,7 @@ h2 {
 
 @media screen and (max-width: 481px) {
   .nav-bar {
-    height: 60px;
+    height: 50px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -315,7 +315,7 @@ h2 {
 
 .nav-bar .menu-btn .menu-btn__burger {
   width: 100%;
-  height: 4px;
+  height: 3px;
   background: #fff;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
@@ -335,7 +335,7 @@ h2 {
   content: '';
   position: absolute;
   width: 40px;
-  height: 4px;
+  height: 3px;
   background: #fff;
   border-radius: 2px;
   -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
@@ -505,6 +505,8 @@ h2 {
 .hero__sliderContainer .swiper .slide__4 {
   background-size: cover;
   background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 481px) {
@@ -639,6 +641,12 @@ h2 {
 }
 
 @media (max-width: 481px) {
+  .cards__container .card .card__content h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 481px) {
   .cards__container .card .card__content {
     margin-left: 50px;
   }
@@ -677,6 +685,12 @@ h2 {
 .modernCleaning h2 {
   font-size: 2.3rem;
   font-weight: 700;
+}
+
+@media (max-width: 481px) {
+  .modernCleaning h2 {
+    font-size: 1.6rem;
+  }
 }
 
 .modernCleaning h2 br {
@@ -1121,6 +1135,12 @@ h2 {
   }
 }
 
+@media (max-width: 481px) {
+  .contact__section {
+    padding: 5rem 1.5rem;
+  }
+}
+
 .contact__section .contact__info {
   -webkit-box-flex: 0.5;
       -ms-flex: 0.5;
@@ -1164,13 +1184,20 @@ h2 {
   }
 }
 
+@media (max-width: 481px) {
+  .contact__form form {
+    width: 100%;
+  }
+}
+
 .contact__form .form__element {
   margin: 1rem 1rem;
 }
 
-.contact__form .form__element input, .contact__form .form__element textarea {
+.contact__form .form__element input,
+.contact__form .form__element textarea {
   width: 100%;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border: 2px solid #19272e;
   border-radius: 5px;
 }
@@ -1180,7 +1207,7 @@ h2 {
 }
 
 .contact__form .contact__button {
-  padding: .8rem 1.5rem;
+  padding: 0.8rem 1.5rem;
 }
 
 .our__contacts {
@@ -1199,6 +1226,19 @@ h2 {
 @media only screen and (max-width: 769px) {
   .our__contacts {
     padding: 2rem .7rem;
+  }
+}
+
+@media (max-width: 481px) {
+  .our__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 300px;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
   }
 }
 
@@ -1280,6 +1320,15 @@ h2 {
   z-index: 100;
 }
 
+@media (max-width: 481px) {
+  .footer .footer__itemsContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .footer .footer__itemsContainer .footer__item {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
@@ -1294,6 +1343,12 @@ h2 {
   }
 }
 
+@media (max-width: 481px) {
+  .footer .footer__itemsContainer .footer__item {
+    margin-bottom: 2rem;
+  }
+}
+
 .footer .footer__itemsContainer .footer__item .about {
   margin-bottom: 1rem;
   line-height: 1.5rem;
@@ -1301,6 +1356,12 @@ h2 {
 
 .footer .footer__itemsContainer .footer__item h3 {
   margin-bottom: 2rem;
+}
+
+@media (max-width: 481px) {
+  .footer .footer__itemsContainer .footer__item h3 {
+    margin-bottom: 0.8rem;
+  }
 }
 
 .footer .footer__itemsContainer .footer__item p {
@@ -1332,7 +1393,7 @@ h2 {
 }
 
 .footer .footer__itemsContainer .contact__item p {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 .footer .footer__itemsContainer .footer__icon {
@@ -1343,6 +1404,13 @@ h2 {
   width: 80%;
   height: 3px;
   background-color: lightgray;
+}
+
+@media (max-width: 481px) {
+  .footer .footer__line {
+    margin-top: -2rem;
+    width: 100%;
+  }
 }
 
 .footer .footer__logo {
@@ -1363,7 +1431,22 @@ h2 {
   padding: 1rem 0;
 }
 
+@media (max-width: 481px) {
+  .footer .footer__lastItems {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .footer .footer__lastItems p {
   color: #fafafa;
   font-weight: 300;
+}
+
+@media (max-width: 481px) {
+  .footer .footer__lastItems p {
+    text-align: center;
+  }
 }
