@@ -12,6 +12,10 @@
     padding: 5rem 1rem;
   }
 
+  @media (max-width: 481px){
+    padding: 5rem 2rem;
+  }
+
   .underline {
     height: 3px;
     background-color: $primaryColor;
