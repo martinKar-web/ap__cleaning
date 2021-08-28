@@ -406,7 +406,7 @@ h2 {
 
 @media screen and (max-width: 481px) {
   .hero__sliderContainer {
-    height: 300px;
+    height: 500px;
   }
 }
 
@@ -424,9 +424,9 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -513,9 +513,6 @@ h2 {
     height: 30px;
     width: 20px;
   }
-}
-
-@media screen and (max-width: 481px) {
   .hero__sliderContainer .swiper-container .prev::after,
   .hero__sliderContainer .swiper-container .next::after {
     font-size: 1rem;
@@ -950,6 +947,7 @@ h2 {
 }
 
 .services .swiper-slide {
+  position: relative;
   background: #fff;
   height: 500px;
   display: -webkit-box;

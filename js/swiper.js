@@ -9,8 +9,8 @@ let swiper = new Swiper('.hero__slide', {
   },
   loop: true,
   effect: "slide",
-  shortSwipes: true,
-  simulateTouch: true,
+  //shortSwipes: true,
+  //simulateTouch: true,
   effect: "fade",
   speed: 2000,
 });
